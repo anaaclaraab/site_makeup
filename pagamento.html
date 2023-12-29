@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  
+  
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+    <link rel ="stylesheet" href ="style.css">
+
+</head>
+
+<body>
+    
+
+        <nav id="navbar" class="navbar nav justify-content-center" style="top: 0;">
+            <a href="index.html">Página Inicial</a>
+            <a href="categorias.html">Categorias</a>
+            <a href = "carrinho.html">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                    </svg>
+                </div>
+            </a>
+        </nav>
+        
+        <script>
+            // Adiciona animação de deslizamento ao rolar a página
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (currentScrollPos > 50) {
+                    document.getElementById("navbar").style.top = "-50px";
+                } else {
+                    document.getElementById("navbar").style.top = "0";
+                }
+            }
+        </script>
+    <!-- Conteúdo da Página -->
+    <div class="container mt-3">
+
+        <!-- Título -->
+        <h2>Pagamento</h2>
+
+        <!-- Formulário de Pagamento -->
+        <form>
+            <div class="mb-3">
+                <label for="nomeCartao" class="form-label">Nome no Cartão</label>
+                <input type="text" class="form-control" id="nomeCartao" required>
+            </div>
+            <div class="mb-3">
+                <label for="numeroCartao" class="form-label">Número do Cartão</label>
+                <input type="text" class="form-control" id="numeroCartao" required>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="dataValidade" class="form-label">Data de Validade</label>
+                    <input type="text" class="form-control" id="dataValidade" placeholder="MM/AA" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="codigoSeguranca" class="form-label">Código de Segurança</label>
+                    <input type="text" class="form-control" id="codigoSeguranca" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Pagar</button>
+        </form>
+
+    </div>
+
+    <!-- Adicione o link do Bootstrap JS e do Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

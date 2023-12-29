@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel ="stylesheet" href ="style.css">
+
+
+</head>
+<body>
+
+    <nav id="navbar" class="navbar nav justify-content-center" style="top: 0;">
+        <a href="index.html">Página Inicial</a>
+        <a href="categorias.html">Categorias</a>
+        <a href = "carrinho.html">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+            </div>
+        </a>
+    </nav>
+
+    <h2>Seu Carrinho de Compras</h2>
+    
+    
+    <script>
+        // Adiciona animação de deslizamento ao rolar a página
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos > 50) {
+                document.getElementById("navbar").style.top = "-50px";
+            } else {
+                document.getElementById("navbar").style.top = "0";
+            }
+        }
+    </script>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>R$ 50,00</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>1</td>
+                <td>R$ 30,00</td>
+                <td>R$ 30,00</td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+    </table>
+
+    <p class="total">Total: R$ 130,00</p>
+
+    <a href = "pagamento.html"> 
+        <button class="checkout-btn" onclick="redirectToPayment()"> Ir para pagamento</button>
+    </a>
+    <script>
+        function redirectToPayment() {
+            // Aqui você pode redirecionar para a página de pagamento
+            alert('Você será redirecionado para a página de pagamento!');
+            // window.location.href = 'pagina-de-pagamento.html';
+        }
+    </script>
+
+</body>
+</html>

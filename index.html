@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  
+  
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+    <link rel ="stylesheet" href ="style.css">
+
+</head>
+
+<body>
+    
+
+        <nav id="navbar" class="navbar nav justify-content-center" style="top: 0;">
+            <a href="index.html">Página Inicial</a>
+            <a href="categorias.html">Categorias</a>
+            <a href = "carrinho.html">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                    </svg>
+                </div>
+            </a>
+        </nav>
+        
+        <script>
+            // Adiciona animação de deslizamento ao rolar a página
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (currentScrollPos > 50) {
+                    document.getElementById("navbar").style.top = "-50px";
+                } else {
+                    document.getElementById("navbar").style.top = "0";
+                }
+            }
+        </script>
+
+        <div id="carouselExample" class="carousel slide" sytle="display: block; margin-block-end: 100px;">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="AC Makeup.png" class="d-block w-100" width="500px " height="350px">
+            </div>
+            <div class="carousel-item">
+                <img src="tudoqvcprecisa.png" class="d-block w-100" width="500px " height="350px" >
+            </div>
+            <div class="carousel-item">
+                <img src="umsolugar.png" class="d-block w-100" width="300px " height="350px">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div sytle="margin-bottom: 100px">
+            <p></p>
+        </div>
+
+        <div class = "background" >
+            <div class = "Meio" sytle="padding-top: 50px">
+                <h1 style="color: white;">Quem sou</h1>
+          
+                <p  style="color: white; padding-top: 50px;">Meu nome é Ana Clara, e eu sou uma maquiadora com mais de 3 anos de experiência neste incrível universo da beleza. </br> Desde o início da minha jornada, tenho vivenciado a transformação que a maquiagem pode trazer, não apenas em termos <br> de aparência, mas também na confiança e autoestima.<br> Seja bem-vinda ao meu mundo, onde a maquiagem é uma expressão de amor próprio, <br> e nosso objetivo é elevar a autoestima de todas as mulheres que cruzam o meu caminho.</p>
+            
+           
+            </div> <!--Meio-->
+        </div> <!--background-->
+
+        <section>
+            <h1 style="text-align: center;"> NOVOS PRODUTOS </h1>
+            <section class="container">
+                <div class="produto">
+                <img src="limpeza.webp" alt="Produto 1" width="300px" height="300px">
+                <h2>Limpeza Facial</h2>
+                <p>Produtos para limpeza para antes e depois da maquiagem</p>
+                    <p>Preço:
+                    R$30,00 - R$50,00 </p>
+                <a href="ver_mais.html">
+                    <button class="btn btn-primary">Adicionar ao carrinho</button>
+                </a>
+                </div>
+        
+        
+                <div class="produto">
+                <img src="basematte.jpg" alt="Produto 2" width="300px" height="300px">
+                <h2>Bases</h2>
+                <p>Bases para todos tipos de pele,de média e alta cobertura</p>
+                <p>Preço: R$35,00 - R$ 60,00</p>
+                <a href="ver_mais.html">
+                    <button class="btn btn-primary">Adicionar ao carrinho</button>
+                </a>
+                </div>
+            
+                <div class="produto">
+                    <img src="blush.webp" alt="Produto 2" width="300px" height="300px">
+                    <h2>Blushs</h2>
+                    <p>Blushs para dar uma corzinha a sua make <3 </p>
+                    <p>Preço: R$35,00 - R$ 60,00</p>
+                    <a href="ver_mais.html">
+                        <button class="btn btn-primary">Adicionar ao carrinho</button>
+                    </a>
+                </div>
+                <!-- Adicione mais produtos aqui -->
+          </section>
+        
+        
+        
+            <section class="container">
+                <div class="produto">
+                  <img src="https://72036.cdn.simplo7.net/static/72036/sku/face-corretivos-corretivo-liquido-matte-vegano-vizzela--p-1664218021139.jpg" alt="Produto 4">
+                  <h2>Corretivos</h2>
+                  <p>Corretivos de média e alta cobertura </p>
+                  <p>Preço: R$30,00 - R$45,00 </p>
+                  <!-- Adicione um atributo data-toggle e data-target para abrir o modal -->
+                  <a href="ver_mais.html">
+                    <button class="btn btn-primary">Adicionar ao carrinho</button>
+                    </a>
+                </div>
+        
+                <div class="produto">
+                    <img src="https://tfczxi.vtexassets.com/arquivos/ids/179544/po-solto-melu-by-rubyrose-capa.jpg?v=638169261413500000" alt="Produto 5">
+                    <h2>Pó solto</h2>
+                    <p>Pó solto de cobertura leve , acabamento aveludado e textura fina </p>
+                    <p>Preço: R$30,00 - R$35,00 </p>
+                    <!-- Adicione um atributo data-toggle e data-target para abrir o modal -->
+                    <a href="ver_mais.html">
+                        <button class="btn btn-primary">Adicionar ao carrinho</button>
+                    </a>
+                </div>
+        
+        
+                <div class="produto">
+                    <img src="https://images.tcdn.com.br/img/img_prod/757622/delineador_liquido_cat_ultra_preto_semibrilho_3_2_ml_dailus_33719_1_20200908150858.jpg" alt="Produto 6">
+                    <h2>Delineador</h2>
+                    <p>Delineador Líquido ultra preto semibrilho </p>
+                    <p>Preço: R$15,00 - R$35,00 </p>
+                    <!-- Adicione um atributo data-toggle e data-target para abrir o modal -->
+                    <a href="ver_mais.html">
+                        <button class="btn btn-primary">Adicionar ao carrinho</button>
+                    </a>
+                </div>
+            </section>
+    
+            <section class ="cta ">
+                <div class = "text-cta" style="background-color: #F6DCE8; margin-bottom: 60px; height: 150px; padding-top: 30px;">
+                    <h6>Fim de ano </h6>
+                    <h4> 20% de Desconto</h4>
+                </div><!---text-cta-->
+            </section> <!--cta-->
+            <section>
+                <h1> Promoções</h1>
+                
+                <section class="container">
+                    <div class="produto">
+                    <img src="batom.jpg" alt="Produto 1" width="300px" height="300px">
+                    <h2>Batons</h2>
+                    <p>Batons Líquidos e Mattes</p>
+                        <p>R$30,00 - R$50,00 </p>
+                        <a href="ver_mais.html">
+                            <button class="btn btn-primary">Adicionar ao carrinho</button>
+                        </a>
+                    </div>
+            
+            
+                    <div class="produto">
+                    <img src="blindagem.webp" alt="Produto 2" width="300px" height="300px">
+                    <h2>Blindagem </h2>
+                    <p>Angel Magic Blindagem para Pele e Olhos Pri Lessa </br> - Catharine Hill - 30 ml</p>
+                    <p>R$53,20 - R$60,00</p>
+                    <a href="ver_mais.html">
+                        <button class="btn btn-primary">Adicionar ao carrinho</button>
+                    </a>
+                    </div>
+                
+                    <div class="produto">
+                        <img src="hidratantelabial.webp" alt="Produto 2" width="300px" height="300px">
+                        <h2>Blushs</h2>
+                        <p>Blushs para dar uma corzinha a sua make <3 </p>
+                        <p>R$35,00 - R$ 45,00</p>
+                        <a href="ver_mais.html">
+                            <button class="btn btn-primary">Adicionar ao carrinho</button>
+                        </a>
+                    </div>
+                    <!-- Adicione mais produtos aqui -->
+              </section>
+            
+            </section>
+        
+      
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>
