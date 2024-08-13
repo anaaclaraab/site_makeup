@@ -1,0 +1,60 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "name": "Match Stix Matte Skinstick",
+            "description": "Bases para todos tipos de pele, de média e alta cobertura",
+            "price": "R$35,00 - R$60,00",
+            "image": "bastao.avif"
+        },
+        {
+            "id": 2,
+            "name": "Batom Santin",
+            "description": "Lindo e cremoso",
+            "price": "R$35,00 - R$60,00",
+            "image": "batom.avif"
+        },
+        {
+            "id": 3,
+            "name": "Corretivos",
+            "description": "Corretivos de média e alta cobertura",
+            "price": "R$30,00 - R$45,00",
+            "image": "https://72036.cdn.simplo7.net/static/72036/sku/face-corretivos-corretivo-liquido-matte-vegano-vizzela--p-1664218021139.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Pó solto",
+            "description": "Pó solto de cobertura leve, acabamento aveludado e textura fina",
+            "price": "R$30,00 - R$35,00",
+            "image": "https://tfczxi.vtexassets.com/arquivos/ids/179544/po-solto-melu-by-rubyrose-capa.jpg?v=638169261413500000"
+        },
+        {
+            "id": 5,
+            "name": "Delineador",
+            "description": "Delineador Líquido ultra preto semibrilho",
+            "price": "R$15,00 - R$35,00",
+            "image": "https://images.tcdn.com.br/img/img_prod/757622/delineador_liquido_cat_ultra_preto_semibrilho_3_2_ml_dailus_33719_1_20200908150858.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Blush",
+            "description": "Blush para dar um toque especial à sua maquiagem",
+            "price": "R$25,00 - R$40,00",
+            "image": "https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dw35ea2021/images/Color%20BR/RARE%20BEAUTY/soft_pinch_blush/RB-OnWhite-SPBlushExtension-Encourage-2000X2000_1500px.jpg?sw=400&sh=400&sm=fit"
+        },
+        {
+            "id": 7,
+            "name": "Paleta Versátil",
+            "description": "Paleta Versátil com corretivos, blushs e contornos",
+            "price": "R$25,00 - R$40,00",
+            "image": "paleta.webp"
+        },
+        {
+            "id": 8,
+            "name": "Rímel",
+            "description": "Rímel a prova de água",
+            "price": "R$30,00 - R$40,00",
+            "image": "https://www.revendadecosmeticos.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/_/m_scara-c_lios-wave-lash-luisance-3.jpg"
+        }
+    ]
+}
