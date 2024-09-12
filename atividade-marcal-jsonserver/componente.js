@@ -93,19 +93,15 @@ nav a {
     background-color: #0056b3;
     /* Cor do botão ao passar o mouse */
 }
-`)
+`);
 
 template.innerHTML = `
-  <div class="produto">
-    <slot name="imagem-produto">COLOQUE A TAG IMG AQUI</slot>
-    <slot name="nome-produto">COLOQUE O NOME DO PRODUTO AQUI</slot>
-    <slot name="descricao-produto">COLOQUE A DESCRIÇÃO DO PRODUTO AQUI</slot>
-    <slot name="faixa-preco">COLOQUE A FAIXA DE PREÇO DO PRODUTO</slot>
-    <a href="ver_mais.html">
-        <button class="btn-primary">Adicionar ao carrinho</button>
-    </a>
-  </div>
-`
+  <slot name="imagem-produto">COLOQUE A TAG IMG AQUI</slot>
+  <slot name="nome-produto">COLOQUE O NOME DO PRODUTO AQUI</slot>
+  <slot name="descricao-produto">COLOQUE A DESCRIÇÃO DO PRODUTO AQUI</slot>
+  <slot name="faixa-preco">COLOQUE A FAIXA DE PREÇO DO PRODUTO</slot>
+  <slot name="botao"></slot>
+`;
 
 class Componente extends HTMLElement {
   constructor() {

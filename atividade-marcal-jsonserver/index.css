@@ -1,0 +1,147 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  background-color: rgb(150, 236, 232);
+  overflow: hidden;
+  width: calc(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-inline-start: 80px;
+  margin-inline-end: 80px;
+}
+
+.navbar-light {
+  background-color: #F8F9FA;
+}
+
+.produto-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.produto {
+  width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.produto img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carrinho h1 {
+  font-size: 4rem;
+}
+
+.carrinho .botoes {
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.botoes a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: #007bff;
+}
+
+.botoes a:nth-child(1) {
+  background-color: red;
+}
+
+.produtos {
+  background-color: rgb(236, 236, 236);
+  height: 30rem;
+  width: 95%;
+  margin: 1rem;
+  overflow-y: scroll;
+}
+
+#produtos-carrinho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.produto-carrinho {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+#produtos-carrinho img {
+  height: 9rem;
+}
+
+#produtos-carrinho button {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: #007bff;
+}
+
+#produtos-carrinho h2, #produtos-carrinho p {
+  font-size: 1.5rem;
+}
